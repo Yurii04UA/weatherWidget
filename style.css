@@ -1,0 +1,13 @@
+.container{
+   max-width: 1400px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.box{
+   height: 500px;
+   width: 500px;
+   border: 1px solid ;
+   margin: 0 auto;
+   margin-top: 100px;
+}
