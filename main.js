@@ -19,6 +19,8 @@ function WeatherWidgit(element) {
       description: data.weather[0].description,
       icon: data.weather[0].icon,
     };
+    myData.description =
+    myData.description[0].toUpperCase() + myData.description.slice(1);
   }
   async function fetchUrl(url) {
     let content;
@@ -55,7 +57,7 @@ function WeatherWidgit(element) {
                   </div>
                </div>
                <div class="temp-feels_like">Feels like : ${myData.temp_feels_Like} °C</div>
-               <div class="forecast"></div>
+               <div class="forecast">${myData.description}</div>
             </div>
          </div>
        </div>
