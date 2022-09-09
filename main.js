@@ -20,7 +20,7 @@ function WeatherWidgit(element) {
       icon: data.weather[0].icon,
     };
     myData.description =
-    myData.description[0].toUpperCase() + myData.description.slice(1);
+      myData.description[0].toUpperCase() + myData.description.slice(1);
   }
   async function fetchUrl(url) {
     let content;
@@ -68,7 +68,7 @@ function WeatherWidgit(element) {
     element.append(container);
   }
 
-  navigator.geolocation.getCurrentPosition(function success(position) {
+  navigator.geolocation.getCurrentPosition(position => {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
 
